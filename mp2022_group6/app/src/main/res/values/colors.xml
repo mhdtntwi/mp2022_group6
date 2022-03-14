@@ -10,4 +10,10 @@
     <color name="colorPrimary">#00796b</color>
     <color name="colorPrimaryDark">#00695C</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary2">#D81B60</color>
+    <color name="colorPrimaryDark2">#D81B60</color>
+    <color name="colorAccent2">#D81B60</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhiteman">#FFFFFF</color>
 </resources>
