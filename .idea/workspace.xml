@@ -9,60 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aaefa05-8817-47df-bf03-488875a3ede3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/androidTest/java/com/example/mp2022_group6/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/androidTest/java/com/example/mp2022_group6/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/java/com/example/mp2022_group6/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/java/com/example/mp2022_group6/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/java/com/example/mp2022_group6/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/java/com/example/mp2022_group6/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/java/com/example/mp2022_group6/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/java/com/example/mp2022_group6/RegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/anim/slide_in_left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/anim/slide_in_left.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/anim/slide_in_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/anim/slide_in_right.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/anim/stay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/anim/stay.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/btn_custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/btn_custom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/button_background_blue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/button_background_blue.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/drawable-night/ic_add_img.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/drawable-night/ic_add_img.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_add_img.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_add_img.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_arrow_left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_arrow_left.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_arrow_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_arrow_right.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_back_img.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_back_img.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_facebook.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_facebook.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_google_plus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_google_plus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_login_hero.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_login_hero.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_register_hero.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_register_hero.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_side_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/ic_side_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/re_custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/drawable/re_custom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/layout/activity_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-land/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-land/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-w1240dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-w600dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/app/src/test/java/com/example/mp2022_group6/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/app/src/test/java/com/example/mp2022_group6/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp2022_group6/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mp2022_group6/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="2aaefa05-8817-47df-bf03-488875a3ede3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[M696Y4062212438866]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Akmal Nizam\.android\avd\Pixel_2_API_25.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -117,7 +70,6 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -156,9 +108,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -182,5 +132,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

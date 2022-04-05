@@ -98,7 +98,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="45"
                             android:fontFamily="@font/gotham"
-                            android:text="Shukulpur"
+                            android:text="Kuala Lumpur"
                             android:textAlignment="center"
                             android:textColor="#FFFFFF"
                             android:textSize="18sp" />
@@ -115,7 +115,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="45"
                             android:fontFamily="@font/gotham"
-                            android:text="New Delhi"
+                            android:text="Johor"
                             android:textAlignment="center"
                             android:textColor="#FFFFFF"
                             android:textSize="18sp" />
@@ -198,7 +198,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
-                                    android:text="$600.00"
+                                    android:text="RM000.000"
                                     android:textAlignment="textEnd"
                                     android:textColor="#f5a622"
                                     android:textSize="24sp"
