@@ -33,9 +33,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login); no 1
 
-        editTextLoginEmail = findViewById(R.id.re_email);
+        editTextLoginEmail = findViewById(R.id.re_email); no 2
         editTextLoginPwd = findViewById(R.id.re_password);
 
         authProfile = FirebaseAuth.getInstance();
