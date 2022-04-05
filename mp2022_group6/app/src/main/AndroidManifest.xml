@@ -13,7 +13,7 @@
             android:name=".MainMenu3Activity"
             android:exported="false"
             android:label="@string/title_activity_main_menu3"
-            android:theme="@style/AppTheme.NoActionBar" />
+             />
         <activity
             android:name=".MainMenu2Activity"
             android:exported="false" />
