@@ -40,10 +40,10 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="-16dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_width="416dp"
+        android:layout_height="677dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteY="55dp">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -60,7 +60,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="260dp"
+                        android:layout_height="254dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/bus_image_1" />
 

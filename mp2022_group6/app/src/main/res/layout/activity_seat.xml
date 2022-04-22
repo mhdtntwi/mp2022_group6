@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenu3Activity">
+    tools:context=".SeatActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -27,6 +27,7 @@
                 android:layout_marginRight="16dp">
 
                 <ImageView
+                    android:id="@+id/back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -140,8 +141,8 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView3"
                         android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
                         android:layout_marginTop="24dp"
+                        android:layout_marginRight="8dp"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:cardCornerRadius="4dp"
@@ -171,8 +172,8 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="4dp"
                                     android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
                                     android:fontFamily="@font/calibri"
                                     android:text="Expo bus service"
                                     android:textColor="#4b4b4b"
@@ -207,8 +208,8 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="4dp"
                                     android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
                                     android:fontFamily="@font/calibri"
                                     android:text="3.30 Hour"
                                     android:textAlignment="textEnd"
@@ -413,13 +414,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -433,13 +434,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -472,13 +473,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -492,13 +493,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -531,13 +532,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -551,13 +552,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -590,13 +591,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -610,13 +611,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -649,13 +650,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -669,13 +670,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/your_seat_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -708,13 +709,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -728,13 +729,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -767,13 +768,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -787,13 +788,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -826,13 +827,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -846,13 +847,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -885,13 +886,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -905,13 +906,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <ImageView
+                                <Button
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"

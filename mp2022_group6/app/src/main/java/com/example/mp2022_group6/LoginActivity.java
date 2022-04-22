@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         //Open User Profile
                         //Start the UserProfileActivity
-                        startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
+                        startActivity(new Intent(LoginActivity.this, NavigationActivity.class));
                         finish();
                     } else {
                         firebaseUser.sendEmailVerification();
@@ -140,7 +140,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Already Logged In!", Toast.LENGTH_LONG).show();
 
             //Start the UserProfileActivity
-            startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
+            startActivity(new Intent(LoginActivity.this, NavigationActivity.class));
             finish();
         }
         else {

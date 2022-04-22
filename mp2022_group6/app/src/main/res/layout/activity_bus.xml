@@ -5,14 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenu2Activity">
+    tools:context=".BusActivity">
 
   <com.google.android.material.appbar.AppBarLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:background="#512da8"
       android:theme="@style/AppTheme.AppBarOverlay"
-      app:elevation="0dp">
+      app:elevation="0dp"
+      tools:ignore="MissingConstraints">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -24,14 +25,15 @@
       <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_marginRight="16dp">
+          android:layout_marginEnd="16dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/ic_arrow_back_white_24dp" />
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -49,7 +51,8 @@
   <RelativeLayout
       android:layout_width="413dp"
       android:layout_height="734dp"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      tools:ignore="MissingConstraints">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -137,7 +140,7 @@
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+            android:id="@+id/cardView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -162,6 +165,7 @@
                 android:orientation="vertical">
 
               <TextView
+                  android:id="@+id/busHours1"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -170,6 +174,7 @@
                   android:textColor="#000000"
                   />
               <TextView
+                  android:id="@+id/busName1"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -180,6 +185,7 @@
                   android:textColor="#4b4b4b"
                   />
               <TextView
+                  android:id="@+id/busAddon1"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -196,6 +202,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
               <TextView
+                  android:id="@+id/busprice1"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -206,6 +213,7 @@
                   android:textColor="#f5a622"
                   />
               <TextView
+                  android:id="@+id/traveltime1"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -221,6 +229,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -244,6 +253,7 @@
                 android:orientation="vertical">
 
               <TextView
+                  android:id="@+id/busHours2"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -252,6 +262,7 @@
                   android:textColor="#000000"
                   />
               <TextView
+                  android:id="@+id/busName2"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -262,6 +273,7 @@
                   android:textColor="#4b4b4b"
                   />
               <TextView
+                  android:id="@+id/busAddon2"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -278,6 +290,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
               <TextView
+                  android:id="@+id/busprice2"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -288,6 +301,7 @@
                   android:textColor="#f5a622"
                   />
               <TextView
+                  android:id="@+id/traveltime2"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -303,6 +317,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -326,6 +341,7 @@
                 android:orientation="vertical">
 
               <TextView
+                  android:id="@+id/busHours3"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -334,16 +350,18 @@
                   android:textColor="#000000"
                   />
               <TextView
+                  android:id="@+id/busName3"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
-                  android:text="Start service"
+                  android:text="RapidKL service"
                   android:textStyle="bold"
                   android:layout_marginTop="4dp"
                   android:layout_marginBottom="4dp"
                   android:textColor="#4b4b4b"
                   />
               <TextView
+                  android:id="@+id/busAddon3"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -360,6 +378,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
               <TextView
+                  android:id="@+id/busprice3"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -370,6 +389,7 @@
                   android:textColor="#f5a622"
                   />
               <TextView
+                  android:id="@+id/traveltime3"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -385,6 +405,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -408,6 +429,7 @@
                 android:orientation="vertical">
 
               <TextView
+                  android:id="@+id/busHours4"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -416,16 +438,18 @@
                   android:textColor="#000000"
                   />
               <TextView
+                  android:id="@+id/busName4"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
-                  android:text="Travelo service"
+                  android:text="CityLiner service"
                   android:textStyle="bold"
                   android:layout_marginTop="4dp"
                   android:layout_marginBottom="4dp"
                   android:textColor="#4b4b4b"
                   />
               <TextView
+                  android:id="@+id/busAddon4"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -442,6 +466,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
               <TextView
+                  android:id="@+id/busprice4"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -452,6 +477,7 @@
                   android:textColor="#f5a622"
                   />
               <TextView
+                  android:id="@+id/traveltime4"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -467,6 +493,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -490,6 +517,7 @@
                 android:orientation="vertical">
 
               <TextView
+                  android:id="@+id/busHours5"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -498,6 +526,7 @@
                   android:textColor="#000000"
                   />
               <TextView
+                  android:id="@+id/busName5"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -508,6 +537,7 @@
                   android:textColor="#4b4b4b"
                   />
               <TextView
+                  android:id="@+id/busAddon5"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -524,6 +554,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
               <TextView
+                  android:id="@+id/busprice5"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -534,6 +565,7 @@
                   android:textColor="#f5a622"
                   />
               <TextView
+                  android:id="@+id/traveltime5"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"

@@ -10,12 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainMenu3Activity"
-            android:exported="false"
-            android:label="@string/title_activity_main_menu3"
-             />
+            android:name=".SplashActivity"
+            android:exported="false" />
         <activity
-            android:name=".MainMenu2Activity"
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookingform"
+            android:exported="false" />
+        <activity
+            android:name=".SeatActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_menu3" />
+        <activity
+            android:name=".BusActivity"
             android:exported="false" />
         <activity
             android:name=".MainMenuActivity"

@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class MainMenu2Activity extends AppCompatActivity {
+public class BusActivity extends AppCompatActivity {
 
     CardView cardView;
 
@@ -18,12 +18,12 @@ public class MainMenu2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main_menu2);
+        setContentView(R.layout.activity_bus);
         cardView = findViewById(R.id.cardView);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainMenu3Activity.class);
+                Intent intent = new Intent(getApplicationContext(), SeatActivity.class);
                 startActivity(intent);
 
             }
