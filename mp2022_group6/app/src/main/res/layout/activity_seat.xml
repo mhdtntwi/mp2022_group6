@@ -24,7 +24,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp">
+                android:layout_marginEnd="16dp">
 
                 <ImageView
                     android:id="@+id/back"
@@ -32,7 +32,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/ic_arrow_back_white_24dp" />
+                    android:src="@drawable/ic_arrow_back_white_24dp"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="wrap_content"

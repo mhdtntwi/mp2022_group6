@@ -41,7 +41,8 @@
         android:inputType="textPersonName"
         android:fontFamily="@font/roboto_regular"
         android:background="@drawable/re_custom"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/re_email"
@@ -55,7 +56,8 @@
         android:fontFamily="@font/roboto_regular"
         android:inputType="textEmailAddress"
         android:background="@drawable/re_custom"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/re_password"
@@ -69,7 +71,8 @@
         android:fontFamily="@font/roboto_regular"
         android:inputType="textPassword"
         android:background="@drawable/re_custom"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/re_phone"
@@ -82,7 +85,9 @@
         android:fontFamily="@font/roboto_regular"
         android:inputType="text"
         android:background="@drawable/re_custom"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
 
     <RelativeLayout
         android:layout_width="match_parent"
