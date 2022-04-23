@@ -7,13 +7,18 @@
     tools:context=".NavigationActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#512da8"
 
+        android:background="#512da8"
         android:theme="@style/AppTheme"
         app:elevation="0dp"
-        tools:ignore="MissingConstraints">
+
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -27,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp">
 
+
                 <Button
                     android:id="@+id/userProfileButton"
                     android:layout_width="34dp"
@@ -35,6 +41,15 @@
                     android:layout_alignParentEnd="true"
                     android:background="@drawable/ic_person_outline_white_24dp"
                     tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_person_outline_white_24dp"
+                    tools:ignore="ContentDescription" />
+
 
             </RelativeLayout>
 
@@ -46,8 +61,10 @@
         android:layout_width="416dp"
         android:layout_height="677dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:layout_editor_absoluteY="55dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="54dp">
+
 
         <ScrollView
             android:layout_width="match_parent"
@@ -127,6 +144,7 @@
                             android:hint="Destination"
                             android:textColorHint="#FF8A99AF">
 
+
                             <AutoCompleteTextView
                                 android:id="@+id/destination"
                                 android:layout_width="match_parent"
@@ -137,6 +155,7 @@
                                 android:fontFamily="@font/calibri"
                                 android:inputType="none"
                                 android:text="KL Sentral"/>
+
 
 
                         </com.google.android.material.textfield.TextInputLayout>
@@ -191,8 +210,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    android:background="@drawable/buttonshape"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/btn_custom"
                     android:fontFamily="@font/calibri"
                     android:text="Search Buses"
                     android:textAllCaps="false"

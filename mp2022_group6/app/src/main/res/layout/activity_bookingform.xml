@@ -3,6 +3,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingForm">
+    tools:context=".BookingForm"
+    android:background="#6647D1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".BookingForm">
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Form"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/indigo_daisy"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="50dp"/>
+
+
+        <EditText
+            android:id="@+id/book_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/e_mail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/re_custom"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/book_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/re_custom"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/book_age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Age"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/re_custom"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/book_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone Number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textPassword"
+            android:background="@drawable/re_custom"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="*Your tickets will be sent to this contact . \nNote that this bus operator accepts T-ticket. \nPASSENGER INFORMANTION"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="15sp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/book_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_custom"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Continue Booking"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout></androidx.constraintlayout.widget.ConstraintLayout>
