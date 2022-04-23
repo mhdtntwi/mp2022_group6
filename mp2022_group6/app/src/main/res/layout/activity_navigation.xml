@@ -7,12 +7,15 @@
     tools:context=".MainMenuActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#512da8"
 
+        android:background="#512da8"
         android:theme="@style/AppTheme"
-        app:elevation="0dp">
+        app:elevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -29,8 +32,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
                     android:src="@drawable/ic_person_outline_white_24dp" />
 
             </RelativeLayout>
@@ -43,7 +46,8 @@
         android:layout_width="416dp"
         android:layout_height="677dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:layout_editor_absoluteY="55dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="54dp">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -117,6 +121,7 @@
                             android:textColorHint="#FF8A99AF">
 
                             <EditText
+                                android:id="@+id/DestinationT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
@@ -181,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="16dp"
-                    android:background="@drawable/buttonshape"
+                    android:background="@drawable/btn_custom"
                     android:fontFamily="@font/calibri"
                     android:text="Search Buses"
                     android:textAllCaps="false"
