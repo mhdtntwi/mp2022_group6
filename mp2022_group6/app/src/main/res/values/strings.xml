@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Al-Tawik Express</string>
-
     <string-array name="destination">
         <item>KL Sentral</item>
         <item>Pekeliling</item>
@@ -10,6 +9,7 @@
         <item>Bandar Tasik Selatan</item>
         <item>Sungai Nibong</item>
     </string-array>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

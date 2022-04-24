@@ -163,6 +163,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/busHours1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -171,6 +172,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/busName1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
@@ -181,6 +183,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/busAddon1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -197,6 +200,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/busprice1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -207,6 +211,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/traveltime1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
@@ -415,13 +420,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -435,13 +440,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -474,13 +479,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -494,13 +499,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -533,13 +538,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -553,13 +558,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -592,13 +597,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -612,13 +617,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -651,13 +656,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -671,13 +676,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/your_seat_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -710,13 +715,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -730,13 +735,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -769,13 +774,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -789,13 +794,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -828,13 +833,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -848,13 +853,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -887,13 +892,13 @@
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -907,13 +912,13 @@
                                 android:layout_weight="50"
                                 android:gravity="center">
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
-                                <Button
+                                <ImageButton
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"

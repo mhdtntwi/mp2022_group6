@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingForm"
+    tools:context=".CreditActivity"
     android:background="#6647D1">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".BookingForm">
+        tools:context=".CreditActivity">
 
         <TextView
             android:id="@+id/tv_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Booking Form"
+            android:text="Card Information"
             android:textAlignment="center"
             android:textSize="50sp"
             android:layout_marginStart="25dp"
@@ -36,10 +37,10 @@
 
 
         <EditText
-            android:id="@+id/book_email"
+            android:id="@+id/card_number"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="@string/e_mail"
+            android:hint="Card Number"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
@@ -51,10 +52,10 @@
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/book_name"
+            android:id="@+id/card_expire"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Name"
+            android:hint="Expired Date (MM/YY)"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
@@ -66,10 +67,10 @@
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/book_age"
+            android:id="@+id/card_cvv"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Age"
+            android:hint="CVV Number"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
@@ -84,7 +85,7 @@
             android:id="@+id/book_phone"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Phone Number"
+            android:hint="Name as on the card"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
@@ -95,15 +96,6 @@
             android:textSize="15sp"
             android:importantForAutofill="no" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:text="*Your tickets will be sent to this contact . \nNote that this bus operator accepts T-ticket. \nPASSENGER INFORMANTION"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/roboto_regular"
-            android:textSize="15sp"/>
 
 
 
@@ -113,7 +105,7 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/book_button"
+                android:id="@+id/card_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -122,11 +114,12 @@
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/btn_custom"
                 android:fontFamily="@font/roboto_regular"
-                android:text="Continue Booking"
+                android:text="Next"
                 android:textColor="@android:color/white" />
 
         </RelativeLayout>
 
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

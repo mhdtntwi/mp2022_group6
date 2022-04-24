@@ -42,13 +42,7 @@
                     android:background="@drawable/ic_person_outline_white_24dp"
                     tools:ignore="ContentDescription" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_person_outline_white_24dp"
-                    tools:ignore="ContentDescription" />
+
 
 
             </RelativeLayout>
@@ -117,8 +111,8 @@
                 </RelativeLayout>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="396dp"
+                    android:layout_height="315dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="-44dp"
                     android:layout_marginRight="8dp"
@@ -133,52 +127,21 @@
                         android:layout_marginBottom="16dp"
                         android:orientation="vertical">
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        <Spinner
+                            android:id="@+id/spinner1"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            android:hint="Destination"
-                            android:textColorHint="#FF8A99AF">
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="20dp"
+                            android:entries="@array/destination"
+                            android:fontFamily="@font/calibri" />
 
 
-                            <AutoCompleteTextView
-                                android:id="@+id/destination"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:inputType="none"
-                                android:text="KL Sentral"/>
-
-
-
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
-                                android:drawablePadding="16dp"
-                                android:fontFamily="@font/calibri"
-                                android:hint="From"
-                                android:inputType="text"
-                                android:maxLines="1"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-
-                        </com.google.android.material.textfield.TextInputLayout>
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="20dp"
+                            android:entries="@array/destination"
+                            android:fontFamily="@font/calibri" />
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
