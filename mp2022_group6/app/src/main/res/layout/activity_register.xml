@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,110 +10,158 @@
 
 
     <TextView
-        android:id="@+id/tv_logo"
+        android:id="@+id/banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="5dp"
         android:fontFamily="@font/indigo_daisy"
         android:text="@string/register"
         android:textAlignment="center"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/tv_subtitle"
+        android:id="@+id/bannerDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="@string/tag"
         android:textSize="17sp"
-        android:fontFamily="@font/roboto_regular"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"/>
+        app:layout_constraintBottom_toTopOf="@+id/re_fullname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:layout_constraintVertical_bias="0.692"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/re_fullname"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:hint="@string/your_name"
-        android:inputType="textPersonName"
-        android:fontFamily="@font/roboto_regular"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/re_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/your_name"
         android:importantForAutofill="no"
+        android:inputType="textPersonName"
         android:padding="15dp"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/re_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/re_email"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/re_custom"
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/e_mail"
-        android:inputType="textEmailAddress"
-        android:background="@drawable/re_custom"
         android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/re_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/re_password"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/re_custom"
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/password"
-        android:inputType="textPassword"
-        android:background="@drawable/re_custom"
         android:importantForAutofill="no"
+        android:inputType="textPassword"
         android:padding="15dp"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/re_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/re_phone"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:background="@drawable/re_custom"
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/mobilephone"
-        android:inputType="text"
-        android:background="@drawable/re_custom"
         android:importantForAutofill="no"
-        tools:ignore="TextFields"
+        android:inputType="text"
         android:padding="15dp"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        tools:ignore="MissingConstraints,TextFields" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re_phone" />
 
-        <Button
-            android:id="@+id/button_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/btn_custom"
-            android:fontFamily="@font/roboto_regular"
-            android:text="@string/register"
-            android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_register"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Already Registered ? Login Here"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_register" />
 
-    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

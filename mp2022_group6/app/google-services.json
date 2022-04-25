@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "918796007656",
-    "project_id": "mp2022-group6",
-    "storage_bucket": "mp2022-group6.appspot.com"
+    "project_number": "333548753918",
+    "project_id": "tawikexpress",
+    "storage_bucket": "tawikexpress.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:918796007656:android:963442f0b45b6f8725715d",
+        "mobilesdk_app_id": "1:333548753918:android:5f1f293a080f295d7226af",
         "android_client_info": {
           "package_name": "com.example.mp2022_group6"
         }
       },
       "oauth_client": [
         {
-          "client_id": "918796007656-fs3gfbgl7jgc30ngtjr84eelbuiusghk.apps.googleusercontent.com",
+          "client_id": "333548753918-7fbr3t4rishqpp17u6ch9ldte8lc6go7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCzNUYSzR0N-0qViOgYLMdHMgrBW70TVcE"
+          "current_key": "AIzaSyDj_ZA_plOe361OvbvBAoSNV9XE8NjAwuQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "918796007656-fs3gfbgl7jgc30ngtjr84eelbuiusghk.apps.googleusercontent.com",
+              "client_id": "333548753918-7fbr3t4rishqpp17u6ch9ldte8lc6go7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
