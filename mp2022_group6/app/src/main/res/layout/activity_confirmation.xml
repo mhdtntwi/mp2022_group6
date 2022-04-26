@@ -107,6 +107,7 @@
                         android:weightSum="100">
 
                         <TextView
+                            android:id="@+id/tvcfrom"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="45"
@@ -124,6 +125,7 @@
                             android:src="@drawable/ic_swap_horiz_white_24dp" />
 
                         <TextView
+                            android:id="@+id/tvcdestination"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="45"
@@ -136,7 +138,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/tvbookdate"
+                        android:id="@+id/tvcdate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/linearLayout"
@@ -151,7 +153,7 @@
                         android:id="@+id/cardView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/tvbookdate"
+                        android:layout_below="@+id/tvcdate"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="24dp"
                         android:layout_marginRight="8dp"
@@ -174,7 +176,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tvbooktime"
+                                    android:id="@+id/tvctime"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -183,7 +185,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tvbookbusname"
+                                    android:id="@+id/tvcbusname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
@@ -194,7 +196,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tvbookseatname"
+                                    android:id="@+id/tvcseatname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -211,7 +213,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tvbookprice"
+                                    android:id="@+id/tvcprice"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -252,7 +254,7 @@
                         android:orientation="vertical">
 
                         <EditText
-                            android:id="@+id/cnfrm_email"
+                            android:id="@+id/tvcemail"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -268,7 +270,7 @@
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/cnfrm_name"
+                            android:id="@+id/tvcname"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -278,12 +280,12 @@
                             android:fontFamily="@font/roboto_regular"
                             android:hint="Name"
                             android:importantForAutofill="no"
-                            android:inputType="textEmailAddress"
+                            android:inputType="text"
                             android:padding="15dp"
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/cnfrm_age"
+                            android:id="@+id/tvcage"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -293,12 +295,12 @@
                             android:fontFamily="@font/roboto_regular"
                             android:hint="Age"
                             android:importantForAutofill="no"
-                            android:inputType="textEmailAddress"
+                            android:inputType="number"
                             android:padding="15dp"
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/cnfrm_phone"
+                            android:id="@+id/tvcphone"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -308,12 +310,12 @@
                             android:fontFamily="@font/roboto_regular"
                             android:hint="Phone Number"
                             android:importantForAutofill="no"
-                            android:inputType="textPassword"
+                            android:inputType="textPhonetic"
                             android:padding="15dp"
                             android:textSize="15sp" />
 
                         <Button
-                            android:id="@+id/button_login"
+                            android:id="@+id/button_confirm"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"

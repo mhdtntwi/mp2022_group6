@@ -2,6 +2,8 @@ package com.example.mp2022_group6;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
@@ -9,6 +11,13 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class SeatActivity extends AppCompatActivity {
@@ -21,6 +30,10 @@ public class SeatActivity extends AppCompatActivity {
     private ImageButton C1, C2, C3, C4, C5, C6, C7, C8, C9;
     private ImageButton D1, D2, D3, D4, D5, D6, D7, D8, D9;
 
+    private FirebaseAuth firebaseAuth;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,14 +41,146 @@ public class SeatActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_seat);
 
-        date = findViewById(R.id.tvbookdate);
+        date = findViewById(R.id.tvcdate);
         from = findViewById(R.id.tvseatfrom);
         destination = findViewById(R.id.tvseatdestination);
-        time = findViewById(R.id.tvbooktime);
-        price = findViewById(R.id.tvbookprice);
-        busname = findViewById(R.id.tvbookbusname);
+        time = findViewById(R.id.tvctime);
+        price = findViewById(R.id.tvcprice);
+        busname = findViewById(R.id.tvcbusname);
 
         seatUIViews();
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("Seat Info");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Seat seat = snapshot.getValue(Seat.class);
+
+                if (seat.getA1().equals("booked")){
+                    A1.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A1.setEnabled(false);
+                } if (seat.getA2().equals("booked")){
+                    A2.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A2.setEnabled(false);
+                } if (seat.getA3().equals("booked")){
+                    A3.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A3.setEnabled(false);
+                } if (seat.getA4().equals("booked")){
+                    A4.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A4.setEnabled(false);
+                } if (seat.getA5().equals("booked")){
+                    A5.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A5.setEnabled(false);
+                } if (seat.getA6().equals("booked")){
+                    A6.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A6.setEnabled(false);
+                } if (seat.getA7().equals("booked")){
+                    A7.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A7.setEnabled(false);
+                } if (seat.getA8().equals("booked")){
+                    A8.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A8.setEnabled(false);
+                } if (seat.getA9().equals("booked")){
+                    A9.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    A9.setEnabled(false);
+                }
+
+                 if (seat.getB1().equals("booked")){
+                    B1.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B1.setEnabled(false);
+                } if (seat.getB2().equals("booked")){
+                    B2.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B2.setEnabled(false);
+                } if (seat.getB3().equals("booked")){
+                    B3.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B4.setEnabled(false);
+                } if (seat.getB4().equals("booked")){
+                    B4.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B4.setEnabled(false);
+                } if (seat.getB5().equals("booked")){
+                    B5.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B5.setEnabled(false);
+                } if (seat.getB6().equals("booked")){
+                    B6.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B6.setEnabled(false);
+                } if (seat.getB7().equals("booked")){
+                    B7.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B7.setEnabled(false);
+                } if (seat.getB8().equals("booked")){
+                    B8.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B8.setEnabled(false);
+                } if (seat.getB9().equals("booked")){
+                    B9.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    B9.setEnabled(false);
+                }
+
+                 if (seat.getC1().equals("booked")){
+                    C1.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C1.setEnabled(false);
+                } if (seat.getC2().equals("booked")){
+                    C2.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C2.setEnabled(false);
+                } if (seat.getC3().equals("booked")){
+                    C3.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C3.setEnabled(false);
+                } if (seat.getC4().equals("booked")){
+                    C4.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C4.setEnabled(false);
+                } if (seat.getC5().equals("booked")){
+                    C5.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C5.setEnabled(false);
+                } if (seat.getC6().equals("booked")){
+                    C6.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C6.setEnabled(false);
+                } if (seat.getC7().equals("booked")){
+                    C7.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C7.setEnabled(false);
+                } if (seat.getC8().equals("booked")){
+                    C8.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C8.setEnabled(false);
+                } if (seat.getC9().equals("booked")){
+                    C9.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    C9.setEnabled(false);
+                }
+
+                 if (seat.getD1().equals("booked")){
+                    D1.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D1.setEnabled(false);
+                } if (seat.getD2().equals("booked")){
+                    D2.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D2.setEnabled(false);
+                } if (seat.getD3().equals("booked")){
+                    D3.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D3.setEnabled(false);
+                } if (seat.getD4().equals("booked")){
+                    D4.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D4.setEnabled(false);
+                } if (seat.getD5().equals("booked")){
+                    D5.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D5.setEnabled(false);
+                } if (seat.getD6().equals("booked")){
+                    D6.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D6.setEnabled(false);
+                } if (seat.getD7().equals("booked")){
+                    D7.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D7.setEnabled(false);
+                } if (seat.getD8().equals("booked")){
+                    D8.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D8.setEnabled(false);
+                } if (seat.getD9().equals("booked")){
+                    D9.setImageDrawable(getResources().getDrawable(R.drawable.booked_img));
+                    D9.setEnabled(false);
+                }
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
 
         sdate = getIntent().getStringExtra("keydate");

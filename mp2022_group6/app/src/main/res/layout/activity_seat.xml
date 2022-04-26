@@ -127,7 +127,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/tvbookdate"
+                        android:id="@+id/tvcdate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/linearLayout"
@@ -142,7 +142,7 @@
                         android:id="@+id/cardView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/tvbookdate"
+                        android:layout_below="@+id/tvcdate"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="24dp"
                         android:layout_marginRight="8dp"
@@ -165,7 +165,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tvbooktime"
+                                    android:id="@+id/tvctime"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -174,7 +174,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tvbookbusname"
+                                    android:id="@+id/tvcbusname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
@@ -185,7 +185,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tvbookseatname"
+                                    android:id="@+id/tvcseatname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -202,7 +202,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tvbookprice"
+                                    android:id="@+id/tvcprice"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -427,7 +427,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/B1"
@@ -449,7 +449,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/D1"
@@ -497,7 +497,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                             </LinearLayout>
 
@@ -512,7 +512,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/D2"
@@ -582,7 +582,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                             </LinearLayout>
 
@@ -623,7 +623,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                             </LinearLayout>
 
@@ -679,14 +679,14 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/B5"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                             </LinearLayout>
 
@@ -701,7 +701,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/your_seat_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/D5"
@@ -764,7 +764,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/D6"
@@ -805,7 +805,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/B7"
@@ -834,7 +834,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                             </LinearLayout>
 
@@ -890,14 +890,14 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/D8"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                             </LinearLayout>
 
@@ -931,7 +931,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/B9"
@@ -953,7 +953,7 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
-                                    android:src="@drawable/booked_img" />
+                                    android:src="@drawable/available_img" />
 
                                 <ImageButton
                                     android:id="@+id/D9"

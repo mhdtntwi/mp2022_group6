@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Open Login Activity
-        Button buttonLogin = findViewById(R.id.button_login);
+        Button buttonLogin = findViewById(R.id.button_confirm);
         buttonLogin.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);

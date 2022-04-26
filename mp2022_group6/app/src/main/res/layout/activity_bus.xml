@@ -181,7 +181,7 @@
                 android:orientation="vertical">
 
               <TextView
-                  android:id="@+id/tvbooktime"
+                  android:id="@+id/tvctime"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -190,7 +190,7 @@
                   android:textColor="#000000"
                   />
               <TextView
-                  android:id="@+id/tvbookbusname"
+                  android:id="@+id/tvcbusname"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -201,7 +201,7 @@
                   android:textColor="#4b4b4b"
                   />
               <TextView
-                  android:id="@+id/tvbookseatname"
+                  android:id="@+id/tvcseatname"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"
@@ -218,7 +218,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
               <TextView
-                  android:id="@+id/tvbookprice"
+                  android:id="@+id/tvcprice"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:fontFamily="@font/calibri"

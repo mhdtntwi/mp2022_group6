@@ -40,7 +40,7 @@ private ProgressBar progressBar;
         register = (TextView) findViewById(R.id.registration);
         register.setOnClickListener(this);
 
-        button_login = (Button) findViewById(R.id.button_login);
+        button_login = (Button) findViewById(R.id.button_confirm);
         button_login.setOnClickListener(this);
 
         backButton = (ImageView) findViewById(R.id.backButton);
@@ -73,7 +73,7 @@ private ProgressBar progressBar;
             case R.id.registration:
                 startActivity(new Intent(this, RegisterActivity.class));
                 break;
-            case R.id.button_login:
+            case R.id.button_confirm:
                 userLogin();
                 break;
             case R.id.forgotPassword:

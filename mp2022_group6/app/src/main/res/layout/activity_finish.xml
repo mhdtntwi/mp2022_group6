@@ -86,7 +86,7 @@
                         android:id="@+id/cardView"
                         android:layout_width="400dp"
                         android:layout_height="122dp"
-                        android:layout_below="@+id/tvbookdate"
+                        android:layout_below="@+id/tvcdate"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="24dp"
                         android:layout_marginRight="8dp"
@@ -109,7 +109,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tvbooktime"
+                                    android:id="@+id/tvctime"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -118,7 +118,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tvbookbusname"
+                                    android:id="@+id/tvcbusname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
@@ -129,7 +129,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tvbookseatname"
+                                    android:id="@+id/tvcseatname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -146,7 +146,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tvbookprice"
+                                    android:id="@+id/tvcprice"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
