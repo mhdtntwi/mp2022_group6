@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ConfirmationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForgotActivity"
             android:exported="false" />
         <activity
@@ -19,16 +22,13 @@
             android:name=".FinishActivity"
             android:exported="false" />
         <activity
-            android:name=".CreditActivity"
-            android:exported="false" />
-        <activity
             android:name=".SplashActivity"
             android:exported="false" />
         <activity
             android:name=".NotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".bookingform"
+            android:name=".BookingForm"
             android:exported="false" />
         <activity
             android:name=".SeatActivity"
@@ -38,7 +38,7 @@
             android:name=".BusActivity"
             android:exported="false" />
         <activity
-            android:name=".MainMenuActivity"
+            android:name=".NavigationActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

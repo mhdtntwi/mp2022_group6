@@ -6,64 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".NavigationActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:background="#512da8"
-        android:theme="@style/AppTheme"
-        app:elevation="0dp"
-
-        tools:ignore="MissingConstraints"
+        android:translationZ="5dp"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/relativeLayout"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:theme="@style/AppTheme.Toolbar">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp">
-
-
-                <Button
-                    android:id="@+id/userProfileButton"
-                    android:layout_width="34dp"
-                    android:layout_height="35dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:background="@drawable/ic_person_outline_white_24dp"
-                    tools:ignore="ContentDescription" />
-
-
-
-
-            </RelativeLayout>
-
-        </androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <RelativeLayout
-        android:layout_width="416dp"
-        android:layout_height="677dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="54dp">
-
+        app:layout_constraintTop_toTopOf="parent" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:ignore="UselessParent">
+            tools:ignore="MissingConstraints,UselessParent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,8 +35,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="254dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:scaleType="centerCrop"
                         android:src="@drawable/bus_image_1"
                         tools:ignore="ContentDescription" />
@@ -98,13 +58,25 @@
                         android:layout_width="373dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="13dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="42dp"
+                        android:layout_marginEnd="20dp"
                         android:fontFamily="@font/gotham"
                         android:text="Where you want to go."
                         android:textAlignment="center"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/userProfileButton"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/ic_person_outline_white_24dp"
+                        tools:ignore="ContentDescription" />
 
 
                 </RelativeLayout>
@@ -127,20 +99,20 @@
                         android:orientation="vertical">
 
                         <Spinner
-                            android:id="@+id/spinner1"
+                            android:id="@+id/spinnerFrom"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:layout_marginBottom="20dp"
-                            android:entries="@array/destination"
+                            android:entries="@array/destination_array"
                             android:fontFamily="@font/calibri" />
 
 
                         <Spinner
-                            android:id="@+id/spinner2"
+                            android:id="@+id/spinnerDestination"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:layout_marginBottom="20dp"
-                            android:entries="@array/destination"
+                            android:entries="@array/destination_array"
                             android:fontFamily="@font/calibri" />
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -150,6 +122,7 @@
                             android:textColorHint="#FF8A99AF">
 
                             <EditText
+                                android:id="@+id/etDate"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:drawableStart="@drawable/ic_date_range_light_blue_24dp"
@@ -189,6 +162,5 @@
 
         </ScrollView>
 
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

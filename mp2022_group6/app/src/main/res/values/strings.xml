@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Al-Tawik Express</string>
-    <string-array name="destination">
+    <string-array name="destination_array">
         <item>KL Sentral</item>
         <item>Pekeliling</item>
         <item>Hentian Duta</item>

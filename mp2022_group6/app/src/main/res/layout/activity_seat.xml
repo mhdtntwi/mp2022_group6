@@ -38,8 +38,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
                     android:src="@drawable/ic_filter" />
 
             </RelativeLayout>
@@ -81,7 +81,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/print_clearly"
-                        android:text="Select your bus!"
+                        android:text="Select your seat!"
                         android:textAlignment="center"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp" />
@@ -96,6 +96,7 @@
                         android:weightSum="100">
 
                         <TextView
+                            android:id="@+id/tvseatfrom"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="45"
@@ -113,6 +114,7 @@
                             android:src="@drawable/ic_swap_horiz_white_24dp" />
 
                         <TextView
+                            android:id="@+id/tvseatdestination"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="45"
@@ -125,7 +127,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/tvbookdate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/linearLayout"
@@ -140,7 +142,7 @@
                         android:id="@+id/cardView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView3"
+                        android:layout_below="@+id/tvbookdate"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="24dp"
                         android:layout_marginRight="8dp"
@@ -163,7 +165,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/busHours1"
+                                    android:id="@+id/tvbooktime"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -172,7 +174,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/busName1"
+                                    android:id="@+id/tvbookbusname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
@@ -183,7 +185,7 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/busAddon1"
+                                    android:id="@+id/tvbookseatname"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -200,7 +202,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/busprice1"
+                                    android:id="@+id/tvbookprice"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
@@ -421,12 +423,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A1"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B1"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -441,12 +445,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C1"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D1"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -480,12 +486,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A2"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B2"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -500,12 +508,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C2"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D2"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -539,12 +549,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A3"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B3"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -559,12 +571,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C3"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D3"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -598,12 +612,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A4"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B4"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -618,12 +634,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C4"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D4"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -657,12 +675,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A5"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B5"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -677,12 +697,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C5"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/your_seat_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D5"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -716,12 +738,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A6"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B6"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -736,12 +760,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C6"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D6"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -775,12 +801,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A7"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B7"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -795,12 +823,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C7"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D7"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -834,12 +864,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A8"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/available_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B8"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -854,12 +886,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C8"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D8"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -893,12 +927,14 @@
                                     android:textStyle="bold" />
 
                                 <ImageButton
+                                    android:id="@+id/A9"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/B9"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"
@@ -913,12 +949,14 @@
                                 android:gravity="center">
 
                                 <ImageButton
+                                    android:id="@+id/C9"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginRight="4dp"
                                     android:src="@drawable/booked_img" />
 
                                 <ImageButton
+                                    android:id="@+id/D9"
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:layout_marginLeft="4dp"

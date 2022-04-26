@@ -5,16 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingForm">
+    tools:context=".ConfirmationActivity">
+
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
         android:translationZ="5dp"
-        app:layout_anchor="@+id/relativeLayout"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/relativeLayout2"
         app:layout_anchorGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +35,7 @@
             android:layout_height="?attr/actionBarSize"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:theme="@style/AppTheme.Toolbar">
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -57,7 +59,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-16dp"
@@ -90,7 +92,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/print_clearly"
-                        android:text="Book your tickets!"
+                        android:text="Confirmation Ticket Details!"
                         android:textAlignment="center"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp" />
@@ -105,7 +107,6 @@
                         android:weightSum="100">
 
                         <TextView
-                            android:id="@+id/tvbookfrom"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="45"
@@ -123,7 +124,6 @@
                             android:src="@drawable/ic_swap_horiz_white_24dp" />
 
                         <TextView
-                            android:id="@+id/tvbookdestination"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="45"
@@ -198,7 +198,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/calibri"
-                                    android:text="Seat : A1"
+                                    android:text="A/C Sleeper (2+2)"
                                     android:textColor="#8a8a8a" />
 
                             </LinearLayout>
@@ -251,22 +251,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:fontFamily="@font/roboto_regular"
-                            android:text="*Your tickets will be sent to this contact . \nNote that this bus operator accepts T-ticket. \nPASSENGER INFORMANTION"
-                            android:textSize="15sp" />
-
                         <EditText
-                            android:id="@+id/etEmail"
+                            android:id="@+id/cnfrm_email"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="20dp"
                             android:layout_marginBottom="10dp"
                             android:background="@drawable/re_custom"
@@ -278,7 +268,7 @@
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/etName"
+                            android:id="@+id/cnfrm_name"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -293,7 +283,7 @@
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/etAge"
+                            android:id="@+id/cnfrm_age"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -308,7 +298,7 @@
                             android:textSize="15sp" />
 
                         <EditText
-                            android:id="@+id/etPhone"
+                            android:id="@+id/cnfrm_phone"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -323,7 +313,7 @@
                             android:textSize="15sp" />
 
                         <Button
-                            android:id="@+id/button_book"
+                            android:id="@+id/button_login"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
@@ -332,7 +322,7 @@
                             android:layout_marginBottom="10dp"
                             android:background="@drawable/btn_custom"
                             android:fontFamily="@font/roboto_regular"
-                            android:text="Continue Booking"
+                            android:text="Next"
                             android:textColor="@android:color/white" />
 
 

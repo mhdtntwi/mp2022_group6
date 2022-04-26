@@ -3,11 +3,13 @@ package com.example.mp2022_group6;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -15,11 +17,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ForgotActivity extends AppCompatActivity {
+public class ForgotActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText emailEditText;
     private Button resetPasswordButton;
     private ProgressBar progressBar;
+    private ImageView backButton;
 
     FirebaseAuth auth;
 
@@ -28,7 +31,10 @@ public class ForgotActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot);
 
-        emailEditText = (EditText) findViewById(R.id.re_email);
+        backButton = (ImageView) findViewById(R.id.backButton);
+        backButton.setOnClickListener(this);
+
+        emailEditText = (EditText) findViewById(R.id.fo_email);
         resetPasswordButton = (Button) findViewById(R.id.button_reset);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         
@@ -67,5 +73,13 @@ public class ForgotActivity extends AppCompatActivity {
                 });
             }
         });
+    }
+
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.backButton:
+                startActivity(new Intent(this, LoginActivity.class));
+                break;
+        }
     }
 }

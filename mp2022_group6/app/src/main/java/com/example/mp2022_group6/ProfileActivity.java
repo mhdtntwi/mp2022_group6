@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,14 +27,17 @@ public class ProfileActivity extends AppCompatActivity {
     private String userID;
 
     private TextView signOut;
-    private Button backButton, profileUpdate;
+    private ImageView backButton;
+    private Button profileUpdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        backButton = (Button) findViewById(R.id.backButton);
+        Toast.makeText(ProfileActivity.this, "Sebelum back button", Toast.LENGTH_SHORT).show();
+
+        backButton = (ImageView) findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,38 +45,51 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        Toast.makeText(ProfileActivity.this, "Sebelum sign out", Toast.LENGTH_SHORT).show();
+
         signOut = (TextView) findViewById(R.id.signOut);
         signOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Toast.makeText(ProfileActivity.this, "tengah sign out", Toast.LENGTH_SHORT).show();
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
             }
         });
 
         user = FirebaseAuth.getInstance().getCurrentUser();
+        Toast.makeText(ProfileActivity.this, "tengah dptkan user", Toast.LENGTH_SHORT).show();
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userID = user.getUid();
 
         final TextView greetingTextView = (TextView) findViewById(R.id.greeting);
-        final TextView fullNameTextView = (TextView) findViewById(R.id.re_fullname);
-        final TextView emailTextView = (TextView) findViewById(R.id.re_email);
-        final TextView phoneTextView = (TextView) findViewById(R.id.re_phone);
+        final TextView fullNameTextView = (TextView) findViewById(R.id.etName);
+        final TextView emailTextView = (TextView) findViewById(R.id.etEmail);
+        final TextView phoneTextView = (TextView) findViewById(R.id.etPhone);
 
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 User userProfile = snapshot.getValue(User.class);
 
+                Toast.makeText(ProfileActivity.this, "tengah cek database", Toast.LENGTH_SHORT).show();
+
                 if (userProfile != null){
+                    Toast.makeText(ProfileActivity.this, "profile not null", Toast.LENGTH_SHORT).show();
                     String fullname = userProfile.fullname;
                     String email = userProfile.email;
                     String phone = userProfile.phone;
 
+                    Toast.makeText(ProfileActivity.this, "dah dpt detail", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivity.this, "fullname "+fullname, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivity.this, "email "+email, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivity.this, "phone "+phone, Toast.LENGTH_SHORT).show();
                     greetingTextView.setText("Welcome, " + fullname + "!");
                     fullNameTextView.setText(fullname);
                     emailTextView.setText(email);
                     phoneTextView.setText(phone);
+                    Toast.makeText(ProfileActivity.this, "dah set text", Toast.LENGTH_SHORT).show();
                 }
             }
 

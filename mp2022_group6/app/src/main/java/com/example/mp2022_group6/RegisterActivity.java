@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Objects;
@@ -24,11 +26,12 @@ import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private TextView banner, button_register;
+    private TextView button_register, createText;
     private EditText editTextFullName, editTextPhone, editTextEmail, editTextPassword;
     private ProgressBar progressBar;
+    private ImageView backButton;
 
-   private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +40,14 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         mAuth = FirebaseAuth.getInstance();
 
-        banner = findViewById(R.id.banner);
-        banner.setOnClickListener(this);
-
         button_register = (Button) findViewById(R.id.button_register);
         button_register.setOnClickListener(this);
+
+        createText = (TextView) findViewById(R.id.createText);
+        createText.setOnClickListener(this);
+
+        backButton = (ImageView) findViewById(R.id.backButton);
+        backButton.setOnClickListener(this);
 
         editTextFullName = (EditText) findViewById(R.id.re_fullname);
         editTextEmail = (EditText) findViewById(R.id.re_email);
@@ -52,10 +58,33 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     }
 
+    private void sendEmailVerification() {
+        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+        if(firebaseUser!=null){
+            firebaseUser.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if(task.isSuccessful()){
+                        Toast.makeText(RegisterActivity.this,"Successful Registered, Verification Mail Sent!",Toast.LENGTH_SHORT).show();
+                        mAuth.signOut();
+                        finish();
+                        startActivity(new Intent(RegisterActivity.this , LoginActivity.class));
+
+                    }else{
+                        Toast.makeText(RegisterActivity.this,"Verification Mail has'nt been Sent!",Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        }
+    }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.banner:
+            case R.id.backButton:
+                startActivity(new Intent(this, MainActivity.class));
+                break;
+            case R.id.createText:
                 startActivity(new Intent(this, LoginActivity.class));
                 break;
             case R.id.button_register:
@@ -115,12 +144,19 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()){
-                                        Toast.makeText(RegisterActivity.this, "User has been registeres successfully", Toast.LENGTH_LONG).show();
+                                        //Toast.makeText(RegisterActivity.this, "User has been registeres successfully", Toast.LENGTH_LONG).show();
+                                        //mAuth.signOut();
+                                        //finish();
+                                        //startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+
+                                        sendEmailVerification();
+
                                     }else {
                                         Toast.makeText(RegisterActivity.this, "Failed to register! Try Again!", Toast.LENGTH_LONG).show();
                                     }
                                     progressBar.setVisibility(View.GONE);
                                 }
+
                             });
                         }else {
                             Toast.makeText(RegisterActivity.this, "Failed to register! Try Again!", Toast.LENGTH_LONG).show();
