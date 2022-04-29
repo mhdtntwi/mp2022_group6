@@ -43,13 +43,13 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        aboutusButton = (ImageView) findViewById(R.id.aboutUs_button);
-        aboutusButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this, AboutActivity.class));
-            }
-        });
+        //aboutusButton = (ImageView) findViewById(R.id.aboutUs_button);
+        //aboutusButton.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View view) {
+                //startActivity(new Intent(ProfileActivity.this, AboutActivity.class));
+            //}
+        //});
 
         backButton = (ImageView) findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
