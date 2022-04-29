@@ -9,6 +9,7 @@
     android:background="#6647D1">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#512da8"
@@ -53,6 +54,7 @@
         android:text="@string/register"
         android:textAlignment="center"
         android:textSize="50sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
@@ -69,6 +71,7 @@
         android:fontFamily="@font/roboto_regular"
         android:text="@string/tag"
         android:textSize="17sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/re_fullname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.269"
@@ -77,88 +80,83 @@
         app:layout_constraintVertical_bias="0.684"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/re_fullname"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/re_custom"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="@string/your_name"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:padding="15dp"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/re_email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987"
-        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/re_email"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/re_custom"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="@string/e_mail"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        android:padding="15dp"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/re_password"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout3"
+        app:layout_constraintVertical_bias="0.632"
+        tools:ignore="MissingConstraints">
 
-    <EditText
-        android:id="@+id/re_password"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/re_custom"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="@string/password"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/re_phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/re_fullname"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/re_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/your_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/re_phone"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:background="@drawable/re_custom"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="@string/mobilephone"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:padding="15dp"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597"
-        tools:ignore="MissingConstraints,TextFields" />
+        <EditText
+            android:id="@+id/re_email"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/re_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/e_mail"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/re_password"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/re_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/re_phone"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/re_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/mobilephone"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/button_register"
@@ -172,8 +170,10 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/re_phone" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.717" />
 
     <TextView
         android:id="@+id/createText"

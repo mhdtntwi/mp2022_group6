@@ -27,7 +27,7 @@
                 android:layout_marginEnd="16dp">
 
                 <ImageView
-                    android:id="@+id/back"
+                    android:id="@+id/seat_back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -143,9 +143,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tvcdate"
-                        android:layout_marginLeft="8dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="24dp"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginRight="20dp"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:cardCornerRadius="4dp"
@@ -230,8 +230,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginTop="-36dp"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
@@ -273,26 +273,7 @@
 
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:layout_weight="33.3">
 
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:layout_marginRight="4dp"
-                                    android:src="@drawable/available_img"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
-                                    android:text="Available"
-                                    android:textAlignment="center"
-                                    android:textColor="#b2b2b2" />
-                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"

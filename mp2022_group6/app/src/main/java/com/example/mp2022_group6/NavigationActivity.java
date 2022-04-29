@@ -142,9 +142,8 @@ public class NavigationActivity extends AppCompatActivity {
         userProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(NavigationActivity.this, "Dalam button profile", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(NavigationActivity.this, ProfileActivity.class));
-                Toast.makeText(NavigationActivity.this, "dah tekan", Toast.LENGTH_SHORT).show();
+
             }
         });
 

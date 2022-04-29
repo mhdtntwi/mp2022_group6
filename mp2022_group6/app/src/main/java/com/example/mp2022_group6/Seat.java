@@ -5,15 +5,15 @@ import android.widget.ImageButton;
 
 public class Seat {
 
-    String A1="available", A2="available", A3="available", A4="available", A5="available", A6="available", A7="available", A8="available", A9="available";
-    String B1="available", B2="available", B3="available", B4="available", B5="available", B6="available", B7="available", B8="available", B9="available";
-    String C1="available", C2="available", C3="available", C4="available", C5="available", C6="available", C7="available", C8="available", C9="available";
-    String D1="available", D2="available", D3="available", D4="available", D5="available", D6="available", D7="available", D8="available", D9="available";
+    //String A1="available", A2="available", A3="available", A4="available", A5="available", A6="available", A7="available", A8="available", A9="available";
+    //String B1="available", B2="available", B3="available", B4="available", B5="available", B6="available", B7="available", B8="available", B9="available";
+    //String C1="available", C2="available", C3="available", C4="available", C5="available", C6="available", C7="available", C8="available", C9="available";
+    //String D1="available", D2="available", D3="available", D4="available", D5="available", D6="available", D7="available", D8="available", D9="available";
 
-    //String A1, A2, A3, A4, A5, A6, A7, A8, A9;
-    //String B1, B2, B3, B4, B5, B6, B7, B8, B9;
-    //String C1, C2, C3, C4, C5, C6, C7, C8, C9;
-    //String D1, D2, D3, D4, D5, D6, D7, D8, D9;
+    String A1, A2, A3, A4, A5, A6, A7, A8, A9;
+    String B1, B2, B3, B4, B5, B6, B7, B8, B9;
+    String C1, C2, C3, C4, C5, C6, C7, C8, C9;
+    String D1, D2, D3, D4, D5, D6, D7, D8, D9;
 
 
 

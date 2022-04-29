@@ -63,7 +63,7 @@ public class BookingForm extends AppCompatActivity {
         time.setText(stime);
         price.setText(sprice);
         busname.setText(snamebus);
-        seatname.setText(sseatname);
+        seatname.setText("Seat : "+sseatname);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

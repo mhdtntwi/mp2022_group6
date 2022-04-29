@@ -28,19 +28,16 @@ public class BusActivity extends AppCompatActivity {
         date = findViewById(R.id.tvdate);
         from = findViewById(R.id.tvfrom);
         destination = findViewById(R.id.tvdestination);
-        Toast.makeText(BusActivity.this, "before amik data", Toast.LENGTH_SHORT).show();
 
         sdate = getIntent().getStringExtra("keydate");
         sfrom = getIntent().getStringExtra("keyfrom");
         sdestination = getIntent().getStringExtra("keydestination");
 
-        Toast.makeText(BusActivity.this, "lepas amik data", Toast.LENGTH_SHORT).show();
 
         date.setText(sdate);
         from.setText(sfrom);
         destination.setText(sdestination);
 
-        Toast.makeText(BusActivity.this, "dah set text", Toast.LENGTH_SHORT).show();
 
         expobus = findViewById(R.id.cardView1);
         redbus = findViewById(R.id.cardView2);
@@ -48,16 +45,12 @@ public class BusActivity extends AppCompatActivity {
         citylinerbus = findViewById(R.id.cardView4);
         shuttlebus = findViewById(R.id.cardView5);
 
-
-        Toast.makeText(BusActivity.this, "cardview", Toast.LENGTH_SHORT).show();
-
         expobus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 snamebus = "Expo Bus Service";
                 sprice = "40.00";
                 stime = "9:00AM - 12:30PM";
-                Toast.makeText(BusActivity.this, "nama bus "+snamebus, Toast.LENGTH_SHORT).show();
                 nextPage();
             }
 
@@ -70,7 +63,6 @@ public class BusActivity extends AppCompatActivity {
                 snamebus = "Red Bus Service";
                 sprice = "35.00";
                 stime = "10:00AM - 2:00PM";
-                Toast.makeText(BusActivity.this, "nama bus "+snamebus, Toast.LENGTH_SHORT).show();
                 nextPage();
             }
         });
@@ -81,7 +73,6 @@ public class BusActivity extends AppCompatActivity {
                 snamebus = "RapidKL Service";
                 sprice = "27.00";
                 stime = "12:15PM - 3:30PM";
-                Toast.makeText(BusActivity.this, "nama bus "+snamebus, Toast.LENGTH_SHORT).show();
                 nextPage();
             }
         });
@@ -92,7 +83,6 @@ public class BusActivity extends AppCompatActivity {
                 snamebus = "CityLiner Service";
                 sprice = "38.00";
                 stime = "3:00PM - 5:45PM";
-                Toast.makeText(BusActivity.this, "nama bus "+snamebus, Toast.LENGTH_SHORT).show();
                 nextPage();
             }
         });
@@ -103,7 +93,6 @@ public class BusActivity extends AppCompatActivity {
                 snamebus = "Shuttle Bus Service";
                 sprice = "42.00";
                 stime = "7:00PM - 10:00PM";
-                Toast.makeText(BusActivity.this, "nama bus "+snamebus, Toast.LENGTH_SHORT).show();
                 nextPage();
             }
         });

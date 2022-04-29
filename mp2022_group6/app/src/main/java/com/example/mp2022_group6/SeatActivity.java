@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,8 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SeatActivity extends AppCompatActivity {
 
+    private ImageView backButton;
     private TextView date, from, destination, time, price, busname;
     String sdate, sfrom, sdestination, sprice, stime, snamebus, sstatusseat, sseatname;
+
 
     private ImageButton A1, A2, A3, A4, A5, A6, A7, A8, A9;
     private ImageButton B1, B2, B3, B4, B5, B6, B7, B8, B9;
@@ -40,6 +44,14 @@ public class SeatActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_seat);
+
+        backButton = (ImageView) findViewById(R.id.seat_back);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SeatActivity.this, BusActivity.class));
+            }
+        });
 
         date = findViewById(R.id.tvcdate);
         from = findViewById(R.id.tvseatfrom);

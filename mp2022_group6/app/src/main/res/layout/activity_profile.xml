@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="60dp"
                         android:fontFamily="@font/print_clearly"
                         android:text="Profile!"
                         android:textAlignment="center"
@@ -86,116 +86,34 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tvcdate"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="80dp"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginRight="20dp"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:cardCornerRadius="4dp"
                         app:cardUseCompatPadding="true"
                         app:contentPadding="16dp">
 
-                        <ImageView
-                            android:id="@+id/imageView6"
-                            android:layout_width="71dp"
-                            android:layout_height="63dp"
-                            android:layout_marginLeft="70dp"
-                            app:srcCompat="@drawable/image_profile"
-                            tools:ignore="MissingConstraints" />
-
                         <TextView
                             android:id="@+id/greeting"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="150dp"
-                            android:layout_marginTop="15dp"
-                            android:fontFamily="@font/roboto_regular"
-                            android:text="Hey, Tawik"
-                            android:textSize="23sp" />
-                    </androidx.cardview.widget.CardView>
-                </RelativeLayout>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginTop="-36dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardUseCompatPadding="true"
-                    app:contentPadding="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <EditText
-                            android:id="@+id/etEmail"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:hint="@string/e_mail"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:padding="15dp"
-                            android:fontFamily="@font/roboto_regular"
-                            android:inputType="textEmailAddress"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
                             android:background="@drawable/re_custom"
-                            android:textSize="15sp"
-                            android:importantForAutofill="no" />
-
-                        <EditText
-                            android:id="@+id/etName"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:hint="Name"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_regular"
                             android:padding="15dp"
-                            android:fontFamily="@font/roboto_regular"
-                            android:inputType="textEmailAddress"
-                            android:background="@drawable/re_custom"
-                            android:textSize="15sp"
-                            android:importantForAutofill="no" />
-
-
-                        <EditText
-                            android:id="@+id/etPhone"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:hint="Phone Number"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:padding="15dp"
-                            android:fontFamily="@font/roboto_regular"
-                            android:inputType="textPassword"
-                            android:background="@drawable/re_custom"
-                            android:textSize="15sp"
-                            android:importantForAutofill="no" />
-
-                        <Button
-                            android:id="@+id/profileUpdate"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="40dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/btn_custom"
-                            android:fontFamily="@font/roboto_regular"
-                            android:text="Update"
-                            android:textColor="@android:color/white" />
+                            android:text="Hai, Sayang"
+                            android:textColor="#FF6200EE"
+                            android:textSize="15sp" />
 
                         <TextView
                             android:id="@+id/signOut"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/button_confirm"
-                            android:layout_marginLeft="160dp"
+                            android:layout_marginLeft="230dp"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="30dp"
                             android:text="Sign Out"
@@ -207,10 +125,205 @@
                             app:layout_constraintTop_toBottomOf="@+id/profileUpdate"
                             tools:ignore="MissingConstraints" />
 
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/re_custom"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="@string/e_mail"
+                            android:padding="15dp"
+                            android:textSize="15sp" />
 
-                    </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                        <EditText
+                            android:id="@+id/etPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/re_custom"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Phone Number"
+                            android:importantForAutofill="no"
+                            android:inputType="textPhonetic"
+                            android:padding="15dp"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/profileUpdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_custom"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Edit Profile"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvcdate"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="400dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardBackgroundColor="#5f27cd"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/notificationIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/notification"
+                                android:padding="20dp"
+                                android:src="@drawable/round_back_setting" />
+
+                            <TextView
+                                android:id="@+id/notificationText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_toEndOf="@+id/notificationIcon"
+                                android:text="Notification"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:switchMinWidth="50dp"
+                                android:theme="@style/settingSwitch" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvcdate"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="485dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardBackgroundColor="#5f27cd"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/historyIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/history"
+                                android:padding="20dp"
+                                android:src="@drawable/round_back_setting" />
+
+                            <TextView
+                                android:id="@+id/historyText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_toEndOf="@+id/historyIcon"
+                                android:text="Booking History"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/history_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/arrow_icon" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvcdate"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="570dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardBackgroundColor="#5f27cd"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/aboutUsIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/aboutus"
+                                android:padding="20dp"
+                                android:src="@drawable/round_back_setting" />
+
+                            <TextView
+                                android:id="@+id/aboutUsText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_toEndOf="@+id/aboutUsIcon"
+                                android:text="About Us"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/aboutUs_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/arrow_icon" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
 
             </LinearLayout>
 

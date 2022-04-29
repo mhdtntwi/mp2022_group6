@@ -152,9 +152,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tvcdate"
-                        android:layout_marginLeft="8dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="24dp"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginRight="20dp"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:cardCornerRadius="4dp"
@@ -239,9 +239,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="-36dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginRight="20dp"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
                     app:contentPadding="8dp">
@@ -288,7 +288,7 @@
                             android:fontFamily="@font/roboto_regular"
                             android:hint="Name"
                             android:importantForAutofill="no"
-                            android:inputType="textEmailAddress"
+                            android:inputType="text"
                             android:padding="15dp"
                             android:textSize="15sp" />
 
@@ -303,7 +303,7 @@
                             android:fontFamily="@font/roboto_regular"
                             android:hint="Age"
                             android:importantForAutofill="no"
-                            android:inputType="textEmailAddress"
+                            android:inputType="number"
                             android:padding="15dp"
                             android:textSize="15sp" />
 
@@ -318,7 +318,7 @@
                             android:fontFamily="@font/roboto_regular"
                             android:hint="Phone Number"
                             android:importantForAutofill="no"
-                            android:inputType="textPassword"
+                            android:inputType="textPhonetic"
                             android:padding="15dp"
                             android:textSize="15sp" />
 

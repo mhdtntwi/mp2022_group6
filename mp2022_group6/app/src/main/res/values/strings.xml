@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Al-Tawik Express</string>
+
+    <string name="leader">MUHAMMAD TANTOWI BIN ISNAR</string>
+    <string name="member1">MUHAMMAD AKMAL NIZAM BIN ABD RASID</string>
+    <string name="member2">MUHAMMAD FIRDAUS BIN MOHIDEEN ABDUL CADER</string>
+    <string name="member3">MUHAMMAD KHAIRUL AFIQ BIN KHAIRULAZMAN</string>
+    <string name="member4">AZRIEL HAIKAL BIN M.RAMLEE</string>
+    <string name="member5">AHMAD MAJDI BIN AHMAD SALAHUDDIN</string>
+
+    <string name="aboutUs">it has been quite long since we get our hands on this project. we are student of Computer Science at Universiti Teknologi Malaysia have been assigned to develop an app that can make people ease when booking a ticket. we all came up with and idea to develop this beautiful work which is AL-TAWIK Express that will not just help our app user to book ticket but it also ensure that your trip will be better planned and organize by us. Dont worry about anything , with a few simple click we will bring you the joy of having true vacation.</string>
+
     <string-array name="destination_array">
         <item>KL Sentral</item>
         <item>Pekeliling</item>
